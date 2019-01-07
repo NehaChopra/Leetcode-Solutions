@@ -36,9 +36,6 @@ class UniquePaths {
    public static void DFS(int row, int col, int[][] obstacleGrid, boolean [][] visitedGrid, Integer uniquePathCount,
    		int rowLength, int colLength) {
    	visitedGrid[row][col] = true;
-   	if(row == 1 && col == 1) {
-   		count = 1;
-   	}
    	if(row == rowLength-1 && col == colLength-1) {
    		visitedGrid[row][col] = false;
    		count = count + 1;
