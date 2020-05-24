@@ -41,7 +41,7 @@ public class TopkFrequentWords {
 		List<String> fList = new ArrayList<String>(k);
 		for (int index = wordList.size() - 1; index > 0; index--) {
 			LinkedList<String> wordL = (LinkedList<String>) wordList.get(index);
-			if (wordL != null) {
+			if(wordL !=null) {
 				for (String s : wordL) {
 					fList.add(s);
 				}
