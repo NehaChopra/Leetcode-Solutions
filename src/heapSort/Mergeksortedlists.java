@@ -1,8 +1,8 @@
 package heapSort;
 
-// https://leetcode.com/problems/kth-largest-element-in-an-array/
+// https://leetcode.com/problems/merge-k-sorted-lists/
 
-public class KLargestElementArray {
+public class Mergeksortedlists {
 	public static void heapSort(int[] inputArray) {
 		for (int index = inputArray.length / 2 - 1; index >= 0; index--) {
 			heapify(index, inputArray.length, inputArray);
@@ -44,31 +44,14 @@ public class KLargestElementArray {
 		inputArray[jIndex] = temp;
 	}
 
-	public int findKthLargest(int[] nums, int k) {
-		heapSort(nums);
-		return nums[nums.length - k];
-	}
-
 	public static void main(String[] args) {
 		// int[] arr = new int[] { 3, 2, 1, 5, 6, 4 };
 		// int k = 2;
 
 		int[] arr = new int[] { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
 		int k = 4;
-		KLargestElementArray ob = new KLargestElementArray();
+		Mergeksortedlists ob = new Mergeksortedlists();
 		System.out.println(ob.findKthLargest(arr, k));
 
 	}
 }
-
-/*
- * https://leetcode.com/problems/reverse-pairs/solution/
- * https://leetcode.com/contest/leetcode-weekly-contest-9
- * https://leetcode.com/contest/leetcode-weekly-contest-8
- * https://leetcode.com/contest/leetcode-weekly-contest-7
- * https://leetcode.com/contest/leetcode-weekly-contest-6
- * https://leetcode.com/contest/leetcode-weekly-contest-5
- * https://leetcode.com/contest/leetcode-weekly-contest-4
- * https://leetcode.com/contest/leetcode-weekly-contest-3
- * https://leetcode.com/contest/leetcode-weekly-contest-2
- */
