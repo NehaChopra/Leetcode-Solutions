@@ -4,7 +4,7 @@ package array;
 
 public class MinimumInRotatedSorted {
 	public static void main(String[] args) {
-		int[] nums = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+		 int[] nums = new int[] { 4, 5, 6, 7, 0, 1, 2 };
 		// int[] nums = new int[] { 3, 4, 5, 1, 2 };
 		// int[] nums = new int[] { 4, 5, 6, 7, 0, 1, 2 };
 		// int[] nums = new int[] { 1 };
